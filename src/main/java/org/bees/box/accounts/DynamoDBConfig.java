@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.auth.InstanceProfileCredentialsProvider;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 import com.amazonaws.util.StringUtils;
@@ -37,6 +38,6 @@ public class DynamoDBConfig {
 	
 	@Bean
 	public AWSCredentials awsCredentials() {
-		return new BasicAWSCredentials(accessKey, secretKey);
+		return new InstanceProfileCredentialsProvider().getCredentials();
 	}
 }
