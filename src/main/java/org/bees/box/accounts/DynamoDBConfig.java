@@ -19,11 +19,11 @@ public class DynamoDBConfig {
 	@Value("${amazon.dynamodb.endpoint}")
 	private String dbEndPoint;
 	
-	@Value("${amazon.aws.accesskey}")
-	private String accessKey;
-
-	@Value("${amazon.aws.secretkey}")
-	private String secretKey;
+//	@Value("${amazon.aws.accesskey}")
+//	private String accessKey;
+//
+//	@Value("${amazon.aws.secretkey}")
+//	private String secretKey;
 	
 	@Bean
 	public AmazonDynamoDB amazonDynamoDB() {
