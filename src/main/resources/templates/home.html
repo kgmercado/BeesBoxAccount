@@ -5,25 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-	<h1>List of user accounts</h1>
-	<a th:href="@{/user/add}">Add</a>
-	<table>
-		<thead>
-			<tr>
-				<td>Username</td>
-				<td>E-mail</td>
-				<td>Action</td>
-			</tr>
-		</thead>
-		<tbody>
-			<th:block th:each="user : ${users}">
-				<tr>
-		         	<td th:text="${user.login}">...</td>
-		         	<td th:text="${user.name}">...</td>
-					<td><a th:href="@{/user/add}">Edit</a><a th:href="@{/user/delete}">Delete</a></td>
-		      </tr>
-			</th:block>
-		</tbody>
-	</table>
+	<h1>Welcome to BeesBox's User Account</h1>
 </body>
 </html>
