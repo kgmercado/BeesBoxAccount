@@ -72,6 +72,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>bees-box-account</finalName>
+		<finalName>accounts</finalName>
 	</build>
 </project>
